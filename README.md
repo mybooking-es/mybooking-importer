@@ -1,6 +1,6 @@
 # README
 
-Mybooking Importer Plugin is a tool for importing Mybooking demo sites into a new fresh WordPress installation. Is for internal use of Mybooking staff but you can use it under your responsability.
+Mybooking Importer Plugin is a tool for importing Mybooking demo content and complete base sites into a new fresh WordPress installation. Is for internal use of Mybooking staff but you can use it under your responsability.
 
 ## Description
 
