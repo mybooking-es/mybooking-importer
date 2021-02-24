@@ -128,6 +128,7 @@ do_action( 'pt-ocdi/plugin_page_header' );
 
 			<div class="ocdi__gl-item-container  wp-clearfix  js-ocdi-gl-item-container">
 				<?php $import_file = $predefined_themes[0]; ?>
+				<?php $index=0; ?>
 					<?php
 						// Prepare import item display data.
 						$img_src = isset( $import_file['import_preview_image_url'] ) ? $import_file['import_preview_image_url'] : '';
@@ -138,7 +139,8 @@ do_action( 'pt-ocdi/plugin_page_header' );
 						}
 
 					?>
-					<div class="ocdi__gl-item js-ocdi-gl-item" data-categories="<?php echo esc_attr( Helpers::get_demo_import_item_categories( $import_file ) ); ?>" data-name="<?php echo esc_attr( strtolower( $import_file['import_file_name'] ) ); ?>">
+					<div class="ocdi__gl-item js-ocdi-gl-item" data-categories="<?php echo esc_attr( Helpers::get_demo_import_item_categories( $import_file ) ); ?>" 
+						                                       data-name="<?php echo esc_attr( strtolower( $import_file['import_file_name'] ) ); ?>">
 						<div class="ocdi__gl-item-image-container">
 							<?php if ( ! empty( $img_src ) ) : ?>
 								<img class="ocdi__gl-item-image" src="<?php echo esc_url( $img_src ) ?>">
@@ -155,6 +157,7 @@ do_action( 'pt-ocdi/plugin_page_header' );
 						</div>
 					</div>
 			</div>
+			<div id="js-ocdi-modal-content"></div>
 
 	<?php else : ?>
 
